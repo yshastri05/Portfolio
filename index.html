@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+ </head>
+ <body>
+    <nav id="desktop-nav">
+        <div class="logo">Yogita Shastri</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Yogita Shastri</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div> 
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/Profile.jpg">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Yogita Shastri</h1>
+            <p class="section__text__p1">Data Science Graduate</p>
+            <div class="contact-info-container">
+                <img src="./assets/Location.png" alt="Location icon" class="about-icon"/>
+                <small>United Kingdom<small>
+            </div>
+            <div id="socials-container">
+                <a href="https://www.linkedin.com/in/yogita-shastri" target="_blank">
+                    <img src="./assets/linkedin.png" alt="Linkedin icon" class="icon contact-icon">
+                </a>
+                <a href="https://github.com/yshastri05" target="_blank">
+                    <img src="./assets/github.png" alt="Github icon" class="icon contact-icon">
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get to Know More</p>
+        <h1 class="title">About Me</h1> 
+        <div class="section-container">
+            <div class="about-details-container">
+                <div class="about-container">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience icon" class="about-icon"><br />
+                        <h1 class="heading">Experience</h1><br />
+                        <p class="section__text__p1">6 years <br />IT Operations </p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education icon" class="about-icon"><br />
+                        <h1 class="heading">Education</h1><br />
+                        <p class="section__text__p1">MSc Advanced Computer Science with Data Science </p> <br />
+                        <p class="section__text__p1">BE Computer Science and Engineering </p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/Skills.jpg" alt="Skillset icon" class="about-icon"><br />
+                        <h1 class="heading">Skillset</h1><br />
+                        <div class="grid-container">
+                            <div class="grid-item">
+                                <img src="./assets/checkmark.png" alt="Checkmark icon" class="about-icon"/>
+                                <p class="section__text__p1">Python</p>
+                            </div>
+                            <div class="grid-item">
+                                <img src="./assets/checkmark.png" alt="Checkmark icon" class="about-icon"/>
+                                <p class="section__text__p1">Tableau</p>
+                            </div>
+                            <div class="grid-item">
+                                <img src="./assets/checkmark.png" alt="Checkmark icon" class="about-icon"/>
+                                <p class="section__text__p1">SQL</p>
+                            </div>
+                            <div class="grid-item">
+                                <img src="./assets/checkmark.png" alt="Checkmark icon" class="about-icon"/>
+                                <p class="section__text__p1">Excel</p>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'">
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-container">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/Wipro.png" alt="Experience 1" class="project-img">
+                    </div>
+                    <p class="section__text__p1">Wipro<br>Senior Associate</br>Jan'17-Aug'18</p>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/Unisys.jpg" alt="Experience 2" class="project-img">
+                    </div>
+                    <p class="section__text__p1">Unisys<br>Senior Tech Engineer</br>Aug'18-June'19</p>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/Concentrix.jpg" alt="Experience 3" class="project-img">
+                    </div>
+                    <p class="section__text__p1">Concentrix<br>Escalation Engineer</br>June'19-Aug'22</p>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/Koenig.jpg" alt="Experience 4" class="project-img">
+                    </div>
+                    <p class="section__text__p1">Koenig<br>Corporate Trainer</br>Oct'22-Dec'22</p>
+                </div>
+            </div>          
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'">
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-container">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/CovidData.PNG" alt="Project 1" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Covid 19 Data Exploration</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2-project-btn" onclick="window.open('https://github.com/yshastri05/Covid19-Data-Exploration', '_blank')">View Project</button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/Correlation.PNG" alt="Project 2" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Movie Industry Correlation Analysis</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2-project-btn" onclick="window.open('https://github.com/yshastri05/Movie-Industry-Correlation-Analysis', '_blank')">View Project</button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/AirBnb.PNG" alt="Project 3" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">AirBnB Data Analysis and Visualization</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2-project-btn" onclick="window.open('https://public.tableau.com/app/profile/yogita.shastri/vizzes', '_blank')">View Project</button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/Amazon.PNG" alt="Project 4" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Web Scraping Amazon Books</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2-project-btn" onclick="window.open('https://github.com/yshastri05/Web-Scraping-for-Amazon-Bestseller-Books', '_blank')">View Project</button>
+                    </div>
+                </div>
+            </div>          
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'">
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">                  
+                <a href="mailto:yogitashastri05@gmail.com" target="_blank">
+                    <img src="./assets/Email.png" alt="Email icon" class="icon contact-icon">
+                </a>
+                <p><a href="mailto:yogitashastri05@gmail.com" target="_blank">yogitashastri05@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <a href="https://www.linkedin.com/in/yogita-shastri" target="_blank">
+                    <img src="./assets/linkedin.png" alt="Linkedin icon" class="icon contact-icon">
+                </a>
+                <p><a href="https://www.linkedin.com/in/yogita-shastri" target="_blank">linkedin.com/in/yogita-shastri</a></p>
+            </div>
+            <div class="contact-info-container">
+                <a href="https://github.com/yshastri05" target="_blank">
+                    <img src="./assets/github.png" alt="Github icon" class="icon contact-icon">
+                </a>
+                <p><a href="https://github.com/yshastri05" target="_blank">github.com/yshastri05</a></p>
+            </div>
+        </div> 
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <small>Copyright &#169; 2024 Yogita Shastri. All Rights Reserved.</small>
+    </footer>
+   <script src="script.js"></script> 
+ </body>
+</html>
